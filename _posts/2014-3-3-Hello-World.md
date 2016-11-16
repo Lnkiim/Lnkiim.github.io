@@ -9,6 +9,8 @@ title: Project2
 
 https://lnkiim.github.io/images/Slide1.jpg
 
+![Alt text](/images/Slide1.jpg?raw=true)
+
 **Documentation**
 
 **Class: Online Store Manager**
