@@ -2,8 +2,7 @@
 layout: post
 title: Project 2
 ---
-Overall Approach:
-
+**Overall Approach**
 	There are two overlapping architectures which are contained in this code. The first structure is built in a class is called ‘OnlineStoreManager’. This class is responsible for building and overseeing the production of my second class ‘Online Stores’. The OnlineStoreManager functions on a more macro level, hence it houses all of the functions where aggregate information is needed. (ie. The list of stores created.) 
 
 	The OnlineStore class acts as the blueprint to handle the operations on a more micro level. This class houses methods which help the actual stores operate by tracking inventory, updating customer history, etc. While designing the structure of this class, it was made apparent that splitting up methods gave the code more versatility. For example, the ‘sell’ method, doesn’t actually execute any manipulation of the object or its attributes. Instead, it is merely calling other methods that should be triggered in the work flow. Going back to the example, when an item is sold, two adjustments should be made, the purchase history and the stores inventory. If for some reason, the store needed to adjust the inventory and not because a customer had purchased an item, the code has the flexibility to just call the subtract_inventory method and adjust the inventory as needed.
