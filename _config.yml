@@ -2,7 +2,7 @@
 # This file contains configuration flags to customize your site
 #
 
-# Name of your site (displayed in the header)
+# Name of your site (displayed in header)
 name: Ellen Kim
 
 # Short bio or description (displayed in the header)
@@ -60,6 +60,7 @@ version: v1.2.0
 
 # Jekyll 3 now only supports Kramdown for Markdown
 kramdown:
+theme:airspace-jekyll-master
   # Use GitHub flavored markdown, including triple backtick fenced code blocks
   input: GFM
   # Jekyll 3 and GitHub Pages now only support rouge for syntax highlighting
